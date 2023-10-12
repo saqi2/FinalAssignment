@@ -32,7 +32,7 @@ export class UserController {
         try {
             return this.userService.createUser(createUserDto);
         } catch (error) {
-            throw new UnauthorizedException('Something went wrong');
+            throw new UnauthorizedException('An unexpected exception occured');
         }
     }
 
@@ -46,7 +46,7 @@ export class UserController {
         try {
             return this.userService.viewUser(+id);
         } catch (error) {
-            throw new UnauthorizedException('Something went wrong');
+            throw new UnauthorizedException('An unexpected exception occured');
         }
 
     }
@@ -61,7 +61,7 @@ export class UserController {
         try {
             return this.userService.updateUser(+id, updateUserDto);
         } catch (error) {
-            throw new UnauthorizedException('Something went wrong');
+            throw new UnauthorizedException('An unexpected exception occured');
         }
 
     }
